@@ -17,7 +17,7 @@ export class AssignmentComponent implements OnInit {
   rows;
   completeArray;
   heroPosition;
-  moves:number=0;
+  moves:number=1;
   constructor() { }
 
 
