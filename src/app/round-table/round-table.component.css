@@ -1,0 +1,21 @@
+.round-table{
+    margin: 0 auto;
+    border: solid 2px #ff0000;
+    padding: 50px;
+    border-radius: 56px;
+    height: 350px;
+}
+.center{
+    text-align: center;
+}
+.cardback{
+    width: 35px;
+    margin: 0 -10px;
+    position: relative;
+}
+.opencard{
+    width: 40px;
+    margin: 0 -10px;
+    position: relative;
+}
+

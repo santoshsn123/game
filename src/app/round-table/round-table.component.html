@@ -1,0 +1,97 @@
+<!-- <p>round-table works!</p>
+
+<div class="container">
+
+    <div class="person1">
+        Person 1    
+        </div>
+        <div class="person1">
+            Person 1    
+            </div>
+<div class="round-table">
+    <div>
+        1
+    </div>
+</div>
+<div class="person1">
+    Person 2   
+    </div>
+
+</div> -->
+<div class="container">
+    <h2>Group Id : {{loginData.groupId}}</h2>
+<div class="row">
+    <div class="col-sm-12 center">
+        <h4>{{(allUsers && allUsers[1])? allUsers[1].username:''}}</h4>
+        <span *ngIf="(allUsers && allUsers[1])">
+                <img src="../../assets/img/backimg.jpg" class="cardback" *ngFor="let card of allUsers[1].cards;">
+        </span> 
+        <!-- <img src="../../assets/img/backimg.jpg" class="cardback">
+        <img src="../../assets/img/backimg.jpg" class="cardback">
+        <img src="../../assets/img/backimg.jpg" class="cardback"> -->
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-2 center">
+        <h4>{{(allUsers && allUsers[0])? allUsers[0].username:''}}</h4>
+        <span *ngIf="(allUsers && allUsers[0])">
+            <img src="../../assets/img/backimg.jpg" class="cardback" *ngFor="let card of allUsers[0].cards;">
+    </span> 
+    </div>
+    <div class="col-sm-8 center">
+       <div class="round-table">
+        Table
+        <div class="opened-cards">
+            <h1 *ngIf='distributing'>Distributing Cards</h1>
+            <!-- <div class="card1">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+            </div>
+            <div class="card1">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+            </div>
+            <div class="card1">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+            </div>
+            <div class="card1">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+                <img src="../../assets/img/backimg.jpg" class="opencard">
+            </div> -->
+        </div>
+       </div>
+    </div>
+    <!-- <div class="col-sm-2 center">
+        <h4>{{(allUsers && allUsers[2])? allUsers[2].username:''}}</h4>
+        <img src="../../assets/img/backimg.jpg" class="cardback">
+        <img src="../../assets/img/backimg.jpg" class="cardback">
+        <img src="../../assets/img/backimg.jpg" class="cardback">
+        <img src="../../assets/img/backimg.jpg" class="cardback">
+    </div> -->
+</div>
+
+<div class="row">
+    <div class="col-md-12 center">
+       <h4>Me: {{loginData.username}}</h4>
+        <span>
+            <img src="../../assets/img/backimg.jpg" class="cardback" *ngFor="let card of mydetails.cards;" title="{{card}}">
+        </span> 
+        <!-- <img src="../../assets/img/backimg.jpg" class="cardback">
+        <img src="../../assets/img/backimg.jpg" class="cardback">
+        <img src="../../assets/img/backimg.jpg" class="cardback">
+        <img src="../../assets/img/backimg.jpg" class="cardback"> -->
+        <a href="javascript:void(0);" (click)="logout();">Logout</a>
+    </div>
+</div>
+</div>

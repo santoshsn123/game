@@ -1,0 +1,12 @@
+<table >
+    <tr *ngFor="let row of rows;let rowindex=index;">
+        <td *ngFor="let colum of column;let colindex=index;" style="border: 1px solid #6d8dad; width:60px; height:60px" >
+            <div *ngIf="rowindex * column.length + colindex + 1 == heroPosition " style="background-color: #00ff00;">
+                <img src="../../assets/img/hero.jpg" style="width: 100%;" >
+            </div>
+            <div *ngIf="completeArray[rowindex * column.length + colindex] == 1 " style="background-color: #ff0000;">
+                <img src="../../assets/img/enemy.jpg" style="width: 100%;" >
+            </div>
+        </td>
+    </tr>
+</table>
